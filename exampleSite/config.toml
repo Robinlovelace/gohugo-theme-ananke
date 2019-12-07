@@ -1,13 +1,17 @@
-title = "Notre-Dame de Paris"
-baseURL = "https://example.com"
-languageCode = "en-us"
-theme = "gohugo-theme-ananke"
-themesDir = "../.."
+title = "Our wedding website"
+baseURL = "https://your+partner.com/"
+languageCode = "en-gb"
+themesDir = ".."
+# theme = "gohugo-theme-ananke"
+theme = "wedding"
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
 
+
+# from gohugo-theme-ananke ###################################
 MetaDataFormat = "yaml"
 DefaultContentLanguage = "en"
 SectionPagesMenu = "main"
-Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+Paginate = 3 # this is set low for demonstrating with dummy content. 
 googleAnalytics = ""
 enableRobotsTXT = true
 
@@ -18,9 +22,9 @@ enableRobotsTXT = true
 
 [params]
   favicon = ""
-  description = "The last theme you'll ever need. Maybe."
+  description = "Information on our wedding."
   facebook = ""
-  twitter = "https://twitter.com/GoHugoIO"
+  twitter = "https://twitter.com/robinlovelace"
   instagram = ""
   youtube = ""
   github = ""
@@ -32,3 +36,42 @@ enableRobotsTXT = true
   background_color_class = "bg-black"
   featured_image = "/images/gohugo-default-sample-hero-image.jpg"
   recent_posts_number = 2
+
+# custom menu
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    title = "About us"
+    url = "/about/"
+    weight = -110
+  [[menu.main]]
+    identifier = "venue"
+    name = "Venue"
+    title = "Where the wedding will be"
+    url = "/venue/"
+    weight = -100
+  [[menu.main]]
+    identifier = "schedule"
+    name = "Schedule"
+    title = "schedule us"
+    url = "/schedule/"
+    weight = -90
+  [[menu.main]]
+    identifier = "accommodation"
+    name = "Accommodation"
+    title = "accommodation us"
+    url = "/accommodation/"
+    weight = -80
+  [[menu.main]]
+    identifier = "gifts"
+    name = "Gifts"
+    title = "gifts us"
+    url = "/gifts/"
+    weight = 9999
+  [[menu.main]]
+    identifier = "gifts"
+    name = "Gifts"
+    title = "gifts us"
+    url = "/gifts/"
+    weight = 9999
+
